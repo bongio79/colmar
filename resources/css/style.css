@@ -1,0 +1,33 @@
+/* General rules */
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: white;
+  line-height: 1.4;
+}
+
+/* Header */
+header {
+  border: thin solid black;
+  height: 64px;
+  max-width: 100%;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 32px;
+}
+
+nav span {
+  margin-left: 16px;
+}
