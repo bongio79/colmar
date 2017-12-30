@@ -10,7 +10,7 @@ body {
 
 /* Header */
 header {
-  border: thin solid black;
+  background-color: yellow;
   height: 64px;
   max-width: 100%;
   padding: 0 24px;
@@ -30,4 +30,24 @@ header .logo {
 
 nav span {
   margin-left: 16px;
+}
+
+/* Main content: banner */
+
+.banner {
+  background-color: blue;
+  display: flex;
+  align-items: center;
+}
+
+.banner img {
+  width: 60%;
+  margin: 32px 24px;
+}
+
+.headline .button {
+  text-align: center;
+  padding: 8px;
+  background-color: black;
+  color: white;
 }
