@@ -8,6 +8,10 @@ body {
   line-height: 1.4;
 }
 
+div {
+  border: thin solid black;
+}
+
 /* Header */
 header {
   background-color: yellow;
@@ -34,20 +38,62 @@ nav span {
 
 /* Main content: general rules */
 main img, video {
-  width: 60%;
-  margin: 32px 24px;
+  max-width: 100%;
 }
 
-/* Banner */
-.banner {
+/* Two-columns content: general rules */
+.two-columns {
   background-color: blue;
+  display: flex;
+}
+
+.left-column {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.right-column {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contentbox {
   display: flex;
   align-items: center;
 }
 
-.headline .button {
+.contentbox img {
+  width: 35%;
+  margin: 16px;
+}
+
+.contentbox .info {
+  width: 65%;
+}
+
+.contentbox p {
+  margin-top: 8px;
+}
+
+/* Banner */
+.right-column .button {
   text-align: center;
   padding: 8px;
   background-color: black;
   color: white;
+}
+
+#banner .right-column {
+  width: auto;
+}
+
+/* Campus informations */
+#campus {
+  background-color: green;
+}
+
+#campus .left-column h1 {
+  margin: 32px 0 24px 0;
 }
