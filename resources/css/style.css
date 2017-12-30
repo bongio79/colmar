@@ -32,17 +32,17 @@ nav span {
   margin-left: 16px;
 }
 
-/* Main content: banner */
+/* Main content: general rules */
+main img, video {
+  width: 60%;
+  margin: 32px 24px;
+}
 
+/* Banner */
 .banner {
   background-color: blue;
   display: flex;
   align-items: center;
-}
-
-.banner img {
-  width: 60%;
-  margin: 32px 24px;
 }
 
 .headline .button {
