@@ -8,8 +8,8 @@ body {
   line-height: 1.4;
 }
 
-div {
-  border: thin solid black;
+.center {
+  text-align: center;
 }
 
 /* Header */
@@ -96,4 +96,44 @@ main img, video {
 
 #campus .left-column h1 {
   margin: 32px 0 24px 0;
+}
+
+/* Two-rows content: general rules */
+.two-rows {
+  background-color: pink;
+  padding: 32px 56px 16px 56px;
+}
+
+.programs {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 30%;
+  margin: 16px;
+}
+
+.course img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.course .info {
+  background-color: white;
+  padding: 16px 16px 24px 16px;
+  margin: 0;
+  max-width: 100%;
+  height: 100px;
+}
+
+.course .info h2 {
+  margin: 8px 0;
 }
