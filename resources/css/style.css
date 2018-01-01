@@ -1,6 +1,7 @@
 /* General rules */
 html {
   font-size: 16px;
+  font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -8,37 +9,74 @@ body {
   line-height: 1.4;
 }
 
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  opacity: 0.7;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  opacity: 0.7;
+}
+
+p {
+  opacity: 0.6;
+}
+
 .center {
   text-align: center;
 }
 
-div {
-  border: thin solid black;
+main {
+  position: relative;
+  top: 4rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 /* Header */
 header {
-  background-color: yellow;
-  height: 64px;
-  max-width: 100%;
-  padding: 0 24px;
+  height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  z-index: 5;
+  background-color: white;
+  width: 100%;
 }
 
 header .logo {
   display: flex;
   align-items: center;
+  margin-left: 1.5rem;
 }
 
 .logo img {
-  height: 32px;
+  height: 2rem;
 }
 
-nav span {
-  margin-left: 16px;
+.academy {
+  color: #1A7A90;
 }
+
+nav {
+  margin-right: 1.5rem;
+}
+
+nav a {
+  margin-left: 1rem;
+}
+
+nav a:hover {
+  color: #1A7A90;
+}
+
 
 /* Main content: general rules */
 main img, video {
@@ -52,7 +90,7 @@ main img, video {
 
 .left-column {
   width: 60%;
-  padding: 32px 24px;
+  padding: 2rem 1.5rem;
 }
 
 .right-column {
@@ -60,7 +98,7 @@ main img, video {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 32px;
+  padding: 1rem 1.5rem;
 }
 
 .contentbox {
@@ -70,7 +108,7 @@ main img, video {
 
 .contentbox img {
   width: 35%;
-  margin: 16px;
+  margin: 1rem;
 }
 
 .contentbox .info {
@@ -78,15 +116,25 @@ main img, video {
 }
 
 .contentbox p {
-  margin-top: 8px;
+  margin-top: 0.5rem;
 }
 
 /* Banner */
-.right-column .button {
+.button {
   text-align: center;
   padding: 8px;
   background-color: black;
   color: white;
+  opacity: 0.7;
+}
+
+.button p {
+  opacity: 1;
+}
+
+.button:hover {
+  background-color: #1A7A90;
+  opacity: 1;
 }
 
 #banner .right-column {
@@ -94,23 +142,42 @@ main img, video {
   justify-content: center;
 }
 
-/* Campus informations */
-.campus {
-  background-color: green;
+#banner {
+  background-color: #AFE1ED;
 }
 
+#banner h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.2;
+  opacity: 0.7;
+}
+
+#banner h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  opacity: 0.5;
+  margin: 2rem 0 2.5rem 0;
+}
+
+/* Campus informations */
 .campus .left-column h1 {
-  margin: 32px 0 24px 0;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.info a {
+  color: #1A7A90;
 }
 
 /* Six-box content: general rules */
 .learn {
   background-color: pink;
-  padding: 32px 56px 16px 56px;
+  padding: 2rem 3.5rem 1rem 3.5rem;
+  background-color: #AFE1ED;
 }
 
 .programs {
-  margin-top: 16px;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -122,7 +189,7 @@ main img, video {
   flex-direction: column;
   margin: 0;
   width: 30%;
-  margin: 16px;
+  margin: 1rem;
 }
 
 .course img {
@@ -132,31 +199,31 @@ main img, video {
 }
 
 .course .info {
-  background-color: white;
-  padding: 16px 16px 24px 16px;
+  padding: 1rem 1rem 1.5rem 1rem;
   margin: 0;
   max-width: 100%;
   height: 100px;
+  background-color: white;
 }
 
-.course .info h2 {
-  margin: 8px 0;
+.course .info p {
+  margin: 0.5rem 0;
 }
 
 /* Thesis exhibit */
 .thesis {
-  background-color: blue;
-  padding-top: 32px;
+  padding-top: 2rem;
 }
 
-.thesis h1 {
-  margin: 24px 0 8px 0;
+.thesis h2 {
+  margin: 2rem 0 0.5rem 0;
 }
 
 /* Footer */
 footer {
   display: flex;
-  padding: 16px 24px;
+  padding: 1rem 1.5rem;
   justify-content: space-between;
   align-items: center;
+  background-color: #AFE1ED;
 }
