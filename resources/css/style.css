@@ -12,6 +12,10 @@ body {
   text-align: center;
 }
 
+div {
+  border: thin solid black;
+}
+
 /* Header */
 header {
   background-color: yellow;
@@ -43,7 +47,6 @@ main img, video {
 
 /* Two-columns content: general rules */
 .two-columns {
-  background-color: blue;
   display: flex;
 }
 
@@ -56,7 +59,8 @@ main img, video {
   width: 40%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 32px;
 }
 
 .contentbox {
@@ -87,19 +91,20 @@ main img, video {
 
 #banner .right-column {
   width: auto;
+  justify-content: center;
 }
 
 /* Campus informations */
-#campus {
+.campus {
   background-color: green;
 }
 
-#campus .left-column h1 {
+.campus .left-column h1 {
   margin: 32px 0 24px 0;
 }
 
-/* Two-rows content: general rules */
-.two-rows {
+/* Six-box content: general rules */
+.learn {
   background-color: pink;
   padding: 32px 56px 16px 56px;
 }
@@ -136,4 +141,22 @@ main img, video {
 
 .course .info h2 {
   margin: 8px 0;
+}
+
+/* Thesis exhibit */
+.thesis {
+  background-color: blue;
+  padding-top: 32px;
+}
+
+.thesis h1 {
+  margin: 24px 0 8px 0;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: space-between;
+  align-items: center;
 }
