@@ -23,6 +23,7 @@ h2 {
 
 p {
   opacity: 0.6;
+  margin-top: 0.5rem;
 }
 
 .center {
@@ -37,6 +38,11 @@ main {
 a {
   color: black;
   text-decoration: none;
+  opacity: 0.7;
+}
+
+header p, footer p {
+  margin-top: 0;
 }
 
 /* Header */
@@ -104,19 +110,16 @@ main img, video {
 .contentbox {
   display: flex;
   align-items: center;
+  padding: 1rem;
 }
 
 .contentbox img {
   width: 35%;
-  margin: 1rem;
+  margin-right: 1rem;
 }
 
 .contentbox .info {
   width: 65%;
-}
-
-.contentbox p {
-  margin-top: 0.5rem;
 }
 
 /* Banner */
@@ -130,6 +133,7 @@ main img, video {
 
 .button p {
   opacity: 1;
+  margin: 0;
 }
 
 .button:hover {
@@ -165,8 +169,16 @@ main img, video {
   margin: 2rem 0 1.5rem 0;
 }
 
+.campus .contentbox:last-child {
+  background-color: #AFE1ED;
+}
+
 .info a {
   color: #1A7A90;
+}
+
+.sign {
+  margin-top: 0.5rem;
 }
 
 /* Six-box content: general rules */
@@ -199,23 +211,27 @@ main img, video {
   background-color: white;
 }
 
-.course .info p {
-  margin: 0.5rem 0;
-}
-
 /* Thesis exhibit */
 .thesis {
   padding-top: 2rem;
 }
 
-.thesis h2 {
-  margin: 2rem 0 0.5rem 0;
+.thesis .contentbox:first-child {
+  background-color: #AFE1ED;
+}
+
+.thesis .right-column {
+  padding: 2rem 1.5rem;
+}
+
+video {
+  margin-bottom: 1rem;
 }
 
 /* Footer */
 footer {
   display: flex;
-  padding: 1rem 1.5rem;
+  padding: 1rem 0 1rem 1.5rem;
   justify-content: space-between;
   align-items: center;
   background-color: #AFE1ED;
