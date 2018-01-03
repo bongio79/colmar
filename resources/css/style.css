@@ -171,7 +171,6 @@ main img, video {
 
 /* Six-box content: general rules */
 .learn {
-  background-color: pink;
   padding: 2rem 3.5rem 1rem 3.5rem;
   background-color: #AFE1ED;
 }
@@ -180,29 +179,23 @@ main img, video {
   margin-top: 1rem;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   flex-wrap: wrap;
 }
 
 .course {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  width: 30%;
+  flex-basis: 30%;
   margin: 1rem;
 }
 
 .course img {
   width: 100%;
   height: auto;
-  margin: 0;
 }
 
 .course .info {
-  padding: 1rem 1rem 1.5rem 1rem;
-  margin: 0;
-  max-width: 100%;
-  height: 100px;
+  padding: 1rem;
   background-color: white;
 }
 
