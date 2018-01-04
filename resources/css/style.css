@@ -119,7 +119,12 @@ main img, video {
 
 .contentbox img {
   width: 35%;
+  height: auto;
   margin-right: 1rem;
+}
+
+img.mobile {
+  display: none;
 }
 
 .contentbox .info {
@@ -216,6 +221,7 @@ main img, video {
 .course .info {
   padding: 1rem;
   background-color: white;
+  height: 100%;
 }
 
 /* Thesis exhibit */
@@ -247,11 +253,8 @@ footer {
 /* Mobile styles */
 @media only screen and (max-width: 768px) {
 
-  div {
-    border: thin solid black;
-  }
-  .mobile-content {
-    padding: 2rem 1rem;
+  .banner-mobile {
+    padding: 2rem;
   }
 
   /* Header */
@@ -277,41 +280,59 @@ footer {
 
   .banner-mobile h1 {
     margin-bottom: 2rem;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 900;
     line-height: 1.2;
   }
 
   .banner-mobile h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     opacity: 0.5;
     margin-bottom: 1.5rem;
   }
 
   .button p {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   /* Campus */
-
   .campus .left-column {
     display: none;
   }
 
-  .campus .right-column {
+  .right-column {
     width: 100%;
+    padding: 1rem 1rem 2rem 1rem;
   }
 
-.contentbox {
+  .contentbox {
     flex-direction: column;
-    max-width: 100%;
+    align-items: center;
+    padding: 0 1rem;
   }
+
+  .contentbox:nth-child(1n+2) {
+    margin-top: 3.5rem;
+  }
+
 
   .contentbox .info {
     width: 100%;
   }
 
+  .contentbox img {
+    display: none;
+  }
 
+  img.mobile {
+    display: block;
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  .campus .contentbox:last-child {
+    background-color: white;
+  }
 
 }
