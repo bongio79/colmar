@@ -142,6 +142,7 @@ img.mobile {
   background-color: black;
   color: white;
   opacity: 0.7;
+  transition: background-color 0.5s ease-out;
 }
 
 .button p {
@@ -151,7 +152,7 @@ img.mobile {
 
 .button:hover {
   background-color: #1A7A90;
-  opacity: 1;
+  opacity: 0.7;
 }
 
 #banner .right-column {
@@ -187,6 +188,10 @@ img.mobile {
 
 .info a {
   color: #1A7A90;
+}
+
+.info a:hover {
+  font-weight: 700;
 }
 
 .sign {
@@ -253,10 +258,6 @@ footer {
 /* Mobile styles */
 @media only screen and (max-width: 768px) {
 
-  .banner-mobile {
-    padding: 2rem;
-  }
-
   /* Header */
   header {
     display: none;
@@ -276,6 +277,7 @@ footer {
   .banner-mobile {
     display: block;
     background-color: #AFE1ED;
+    padding: 2rem;
   }
 
   .banner-mobile h1 {
@@ -296,7 +298,7 @@ footer {
     font-size: 1.5rem;
   }
 
-  /* Campus */
+  /* Campus section */
   .campus .left-column {
     display: none;
   }
@@ -316,7 +318,6 @@ footer {
     margin-top: 3.5rem;
   }
 
-
   .contentbox .info {
     width: 100%;
   }
@@ -335,4 +336,46 @@ footer {
     background-color: white;
   }
 
+  /* Start learning section */
+  .programs {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .course img, .course p {
+    display: none;
+  }
+
+  .course h2:hover {
+    font-weight: 900;
+  }
+
+  /* Thesis exhibit section */
+  .thesis h2, .thesis p, .thesis right-column {
+    display: none
+  }
+
+  .thesis h1 {
+    margin-bottom: 1rem;
+  }
+
+  .thesis .two-columns {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .thesis .left-column {
+    width: 100%;
+    padding: 0;
+  }
+
+  video {
+    margin-bottom: 0;
+  }
+
+  /* Footer */
+  footer nav {
+    display: none;
+  }
 }
