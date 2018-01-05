@@ -205,6 +205,10 @@ img.mobile {
 }
 
 /* Six-box content: general rules */
+.learn .info a {
+  color: black;
+}
+
 .learn {
   padding: 2rem 3.5rem 1rem 3.5rem;
   background-color: #C9F3F3;
@@ -251,11 +255,6 @@ img.mobile {
 
 .thesis .right-column {
   padding: 2rem 1.5rem;
-}
-
-.thesis h2:hover {
-  font-weight: 900;
-  color: #D41C1C;
 }
 
 video {
