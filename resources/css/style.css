@@ -38,7 +38,6 @@ main {
 a {
   color: black;
   text-decoration: none;
-  opacity: 0.7;
 }
 
 header p, footer p {
@@ -81,6 +80,7 @@ nav {
 
 nav a {
   margin-left: 1rem;
+  opacity: 0.7;
 }
 
 nav a:hover {
@@ -139,20 +139,25 @@ img.mobile {
 .button {
   text-align: center;
   padding: 8px;
-  background-color: black;
+  background-color: #D41C1C;
   color: white;
-  opacity: 0.7;
-  transition: background-color 0.5s ease-out;
+  transition: background-color 1s ease-out;
+  opacity: 0.8;
+}
+
+.button a {
+  color: white;
 }
 
 .button p {
   opacity: 1;
   margin: 0;
+  font-size: 1.5rem;
 }
 
 .button:hover {
   background-color: #1A3A3A;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 #banner .right-column {
@@ -187,7 +192,8 @@ img.mobile {
 }
 
 .info a {
-  color: #1A3A3A;
+  color: #D41C1C;
+  opacity: 1;
 }
 
 .info a:hover {
@@ -219,7 +225,8 @@ img.mobile {
 }
 
 .course h2:hover {
-    font-weight: 900;
+  font-weight: 900;
+  color: #D41C1C;
 }
 
 .course img {
@@ -247,7 +254,8 @@ img.mobile {
 }
 
 .thesis h2:hover {
-    font-weight: 900;
+  font-weight: 900;
+  color: #D41C1C;
 }
 
 video {
