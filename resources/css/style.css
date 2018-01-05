@@ -151,7 +151,7 @@ img.mobile {
 }
 
 .button:hover {
-  background-color: #1A7A90;
+  background-color: #1A3A3A;
   opacity: 0.7;
 }
 
@@ -161,7 +161,7 @@ img.mobile {
 }
 
 #banner {
-  background-color: #AFE1ED;
+  background-color: #C9F3F3;
 }
 
 #banner h1 {
@@ -183,11 +183,11 @@ img.mobile {
 }
 
 .campus .contentbox:last-child {
-  background-color: #AFE1ED;
+  background-color: #C9F3F3;
 }
 
 .info a {
-  color: #1A7A90;
+  color: #1A3A3A;
 }
 
 .info a:hover {
@@ -201,7 +201,7 @@ img.mobile {
 /* Six-box content: general rules */
 .learn {
   padding: 2rem 3.5rem 1rem 3.5rem;
-  background-color: #AFE1ED;
+  background-color: #C9F3F3;
 }
 
 .programs {
@@ -216,6 +216,10 @@ img.mobile {
   flex-direction: column;
   flex-basis: 30%;
   margin: 1rem;
+}
+
+.course h2:hover {
+    font-weight: 900;
 }
 
 .course img {
@@ -235,11 +239,15 @@ img.mobile {
 }
 
 .thesis .contentbox:first-child {
-  background-color: #AFE1ED;
+  background-color: #C9F3F3;
 }
 
 .thesis .right-column {
   padding: 2rem 1.5rem;
+}
+
+.thesis h2:hover {
+    font-weight: 900;
 }
 
 video {
@@ -252,7 +260,7 @@ footer {
   padding: 1rem 0 1rem 1.5rem;
   justify-content: space-between;
   align-items: center;
-  background-color: #AFE1ED;
+  background-color: #C9F3F3;
 }
 
 /* Mobile styles */
@@ -276,7 +284,10 @@ footer {
 
   .banner-mobile {
     display: block;
-    background-color: #AFE1ED;
+    background-color: #C9F3F3;
+  }
+
+  .banner-mobile .text {
     padding: 2rem;
   }
 
@@ -346,10 +357,6 @@ footer {
     display: none;
   }
 
-  .course h2:hover {
-    font-weight: 900;
-  }
-
   /* Thesis exhibit section */
   .thesis h2, .thesis p, .thesis right-column {
     display: none
@@ -361,8 +368,6 @@ footer {
 
   .thesis .two-columns {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
   .thesis .left-column {
@@ -371,7 +376,7 @@ footer {
   }
 
   video {
-    margin-bottom: 0;
+    margin-bottom: -5rem;
   }
 
   /* Footer */
