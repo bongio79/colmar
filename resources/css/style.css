@@ -44,6 +44,19 @@ header p, footer p {
   margin-top: 0;
 }
 
+nav {
+  margin-right: 1.5rem;
+}
+
+nav a {
+  margin-left: 1rem;
+  opacity: 0.7;
+}
+
+nav a:hover {
+  color: #1A7A90;
+}
+
 /* Header */
 header.mobile {
   display: none;
@@ -71,19 +84,6 @@ header .logo {
 }
 
 .academy {
-  color: #1A7A90;
-}
-
-nav {
-  margin-right: 1.5rem;
-}
-
-nav a {
-  margin-left: 1rem;
-  opacity: 0.7;
-}
-
-nav a:hover {
   color: #1A7A90;
 }
 
@@ -268,6 +268,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: #C9F3F3;
+  position: relative;
+  top: 4rem;
 }
 
 /* Mobile styles */
@@ -369,16 +371,12 @@ footer {
   }
 
   /* Thesis exhibit section */
-  .thesis h2, .thesis p, .thesis right-column {
+  .thesis h2, .thesis p, .thesis .right-column {
     display: none
   }
 
   .thesis h1 {
     margin-bottom: 1rem;
-  }
-
-  .thesis .two-columns {
-    flex-direction: column;
   }
 
   .thesis .left-column {
@@ -387,7 +385,7 @@ footer {
   }
 
   video {
-    margin-bottom: -5rem;
+    margin: 0;
   }
 
   /* Footer */
