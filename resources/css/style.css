@@ -261,6 +261,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.thesis h2:hover {
+  text-decoration: underline;
+}
+
 /* Footer */
 footer {
   display: flex;
